@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import MyAwesomeReactComponent from './MyAwesomeReactComponent';
 import logo from './logo.svg';
 import './App.css';
 
@@ -14,6 +17,9 @@ class App extends Component {
           To get started, edit your face <code>src/App.js</code> and save to reload.
         </p>
       </div>
+    <MuiThemeProvider>
+      <MyAwesomeReactComponent />
+    </MuiThemeProvider>
     );
   }
 }
